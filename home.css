@@ -1,0 +1,635 @@
+/* Css for body. */
+body {
+    background-color: rgb(13, 24, 20);
+}
+
+/* css for header */
+.header {
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    position: sticky;
+    top: 30px;
+    z-index: 1;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-shadow: 2px 2px 10px;
+    perspective: 400px;
+
+}
+
+
+.btn-day-night {
+    border-radius: 20px;
+    background-color: rgb(124, 164, 165);
+    text-shadow: 2px 1px 5px;
+    box-shadow: 2px 1px 10px;
+}
+
+.btn-day {
+    border-radius: 20px;
+    color: rgb(248, 240, 240);
+    background-color: rgb(35, 186, 189);
+    text-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 10px;
+
+}
+
+.btn-night {
+    border-radius: 20px;
+    color: rgb(14, 0, 0);
+    background-color: rgb(45, 174, 176);
+    text-shadow: 1px 1px 5px;
+    box-shadow: 2px 2px 10px;
+
+}
+
+.btn-day:hover {
+    background-color: rgb(161, 225, 227);
+
+}
+
+.btn-night:hover {
+    background-color: dimgrey;
+}
+
+.logo {
+    display: inline-block;
+    transition: transform 1.5s ease;
+
+}
+
+.logo:hover {
+    transform: translate3d(0px, 0px, 200px) rotate(180deg);
+
+}
+
+.links {
+    display: flex;
+    gap: 12px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(11, 221, 176);
+    padding-left: 4px;
+    padding-right: 4px;
+    text-shadow: 2px 2px 100px;
+    box-shadow: 2px 2px 10px;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.links a:hover {
+    box-shadow: 2px 2px 2px 2px;
+    background-color: rgb(234, 238, 238);
+    transform: perspective(400px) translateZ(50px);
+
+}
+
+/* css for footer with animation */
+.footer {
+    background-color: aquamarine;
+    border-radius: 200px;
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.footer a {
+
+    transition: all 0.5s ease-in-out;
+}
+
+.footer a:hover {
+    transform: perspective(400px) translate3d(-2px, 0, 200px) rotate(360deg);
+}
+
+
+
+
+
+/* main content start from here */
+.main {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.main_home img {
+    margin-left: 50px;
+    padding: 50px;
+    border: 2px solid;
+    border-radius: 20px;
+    width: 400px;
+    transition: transform 0.6s ease, box-shadow 0.6s;
+
+}
+
+.main_home img:hover {
+    transform: perspective(600px) rotateY(20deg) rotateX(10deg);
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.4);
+}
+
+.article {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(133, 219, 208);
+    padding: 20px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.article h1 {
+    text-decoration: underline;
+    box-shadow: 2px 2px 4px;
+    background-color: rgb(34, 114, 114);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.article h1:hover {
+    box-shadow: 4px 4px 10px;
+
+}
+
+.article h1 .emoji {
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.article h1 .emoji:hover {
+    transform: perspective(400px) translate3d(-2px, 0, 200px) rotate(360deg);
+
+}
+
+.article:hover {
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.4);
+
+
+}
+
+.article .btn {
+    background-color: rgb(33, 192, 139);
+    border-radius: 20px;
+}
+
+.article .btn:hover {
+    box-shadow: 2px 2px 4px rgba(15, 27, 27);
+}
+
+.article .logos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.article .logos a {
+    transition: all 0.5s ease-in-out;
+
+}
+
+.article .logos a:hover {
+    transform: perspective(400px) translate3d(-2px, 0, 200px) rotate(360deg)
+}
+
+.article .btn-dld {
+    background-color: rgb(9, 179, 113);
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.article .btn-dld:hover {
+    box-shadow: 4px 4px 2px rgba(15, 27, 27);
+    background-color: rgb(45, 232, 169);
+}
+
+.article .btn-dld a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* about page starts from here */
+.main_about {
+    display: flex;
+
+}
+
+.main_about .article {
+    margin: 30px;
+
+
+}
+
+.main_about .article h1 {
+    box-shadow: 2px 2px 4px;
+    background-color: rgb(34, 114, 114);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.main_about .article h1:hover {
+    box-shadow: 4px 4px 10px;
+
+}
+
+/* some animation with help of @keyframes learned from recorded lectures */
+.main_home_about {
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+    transition: all 0.7s linear;
+
+
+}
+
+@keyframes float {
+    0% {
+        transform: perspective(200px) translateY(0);
+    }
+
+    50% {
+        transform: perspective(200px) translateY(-15px) translateZ(1.5px) scale(1.025);
+    }
+
+    100% {
+        transform: perspective(200px) translateY(0)
+    }
+}
+
+.main_home_about:hover {
+    filter: drop-shadow(0 20px 25px rgba(0, 255, 200, 0.4));
+    transform: scale(1.3);
+}
+
+/* contact page */
+.contact {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+}
+
+.contact img {
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.contact img:hover {
+    transform: perspective(400px) translate3d(0px, 0, 40px) rotate(360deg)
+}
+
+.contact .form {
+    background-color: rgb(6, 184, 184);
+    padding: 5px;
+    border-radius: 10px;
+    font-family: cursive;
+
+}
+
+.contact .form .input_box {
+    border-radius: 10px;
+    background-color: rgb(244, 247, 246);
+
+}
+
+
+.contact .form .input_box:hover {
+    background-color: rgb(152, 233, 233);
+    box-shadow: 0 0 12px lime;
+}
+
+.contact .form .btn-contact {
+    background-color: rgb(0, 163, 109);
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+.contact .form .btn-contact:hover {
+    background-color: aquamarine;
+    box-shadow: 0 0 7px rgb(247, 2, 255);
+
+}
+
+/* skills page */
+.skills {
+    margin: 20px;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+
+}
+
+.skills h1 {
+    box-shadow: 2px 2px 4px;
+    background-color: rgb(34, 114, 114);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skills h1:hover {
+    box-shadow: 4px 4px 10px;
+
+}
+
+.skills .skill-card {
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* certification page css */
+.cert-heading {
+    text-align: center;
+    font-size: 32px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.cert-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cert-card {
+    margin: 30px;
+    width: 350px;
+    padding: 20px;
+    color: aliceblue;
+    background-color: rgba(27, 48, 48, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.cert-card p {
+    color: rgb(148, 181, 181);
+}
+
+.cert-card:hover {
+    transform: translateY(-15px) scale(1.07);
+    filter: drop-shadow(0 20px 25px rgba(0, 255, 200, 0.4));
+
+
+}
+
+.cert-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: teal;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.cert-btn:hover {
+    box-shadow: 4px 4px 4px rgb(0, 4, 4);
+}
+
+
+/* project page css */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.project-card {
+    margin-top: 30px;
+    background: rgb(161, 170, 170, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.project-card img {
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 255, 200, 0.4);
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: rgb(247, 247, 247);
+}
+
+.project-card p {
+    font-size: 14px;
+    color: rgb(164, 150, 150);
+    margin-bottom: 12px;
+}
+
+
+/* now I'm going to add media queries from here */
+@media (max-width: 900px) {
+
+    .header {
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .name {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .links {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .main_home img {
+        width: 320px;
+        padding: 30px;
+        margin-left: 0;
+    }
+
+    .article {
+        height: auto;
+        /* VERY IMPORTANT */
+        max-width: 500px;
+    }
+
+    .main_about {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .main_about .article {
+        max-width: 550px;
+    }
+
+    .main_home_about img {
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 12px;
+        top: 10px;
+    }
+
+    .name {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .btn-day-night {
+        display: flex;
+        gap: 8px;
+        padding: 6px;
+    }
+
+    .links {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .links a {
+        width: 90%;
+        text-align: center;
+        padding: 6px 0;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main_home img {
+        width: 90%;
+        padding: 20px;
+        transform: none;
+    }
+
+    .main_home img:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .article {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .article h1 {
+        font-size: 22px;
+    }
+
+    .article p {
+        font-size: 14px;
+    }
+
+    .article .logos {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main_about {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .main_about .article {
+        margin: 15px;
+        width: 90%;
+    }
+
+    .main_home_about img {
+        width: 85%;
+        height: auto;
+    }
+
+
+    .main_home_about {
+        animation: none;
+    }
+
+    .main_home_about:hover {
+        transform: none;
+        filter: none;
+    }
+
+    .about_h1 {
+        font-size: 24px;
+    }
+
+    .about_h3 {
+        font-size: 16px;
+    }
+
+    .about_p1 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
